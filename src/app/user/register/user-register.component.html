@@ -3,7 +3,7 @@
     <div class="form-group">
       <label for="username">Username</label>
       <input type="text" class="form-control" id="username" name="username" ngModel required #username="ngModel" minlength="6">
-      <div *ngIf="form.submitted && username.invalid" >
+      <div *ngIf="form.submitted && username.invalid" class="text-danger">
         <div *ngIf="username.errors.required">Username is required</div>
         <div *ngIf="username.errors.minlength">Username must be at least 6 characters</div>
       </div>
@@ -12,13 +12,13 @@
     <div class="form-group">
       <label for="password">Password</label>
       <input type="text" class="form-control" id="password" name="password" required ngModel #password="ngModel" minlength="6">
-      <div *ngIf="form.submitted && password.invalid" >
+      <div *ngIf="form.submitted && password.invalid" class="text-danger">
         <div *ngIf="password.errors.required">Password is required</div>
         <div *ngIf="password.errors.minlength">Password must be at least 6 characters</div>
       </div>
     </div>
 
-    <button type="submit" class="btn btn-success" [disabled]="form.invalid">Submit</button>
+    <button type="submit" class="btn btn-success" >Submit</button>
 
   </form>
 </div>

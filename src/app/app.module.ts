@@ -13,6 +13,8 @@ import {UserRegisterComponent} from './user/register/user-register.component';
 import {FooterComponent} from './widgets/footer/footer.component';
 import {HeaderComponent} from './widgets/header/header.component';
 import {FormsModule} from '@angular/forms';
+import {ToastrModule} from 'ngx-toastr';
+import {CommonModule} from '@angular/common';
 
 @NgModule({
   declarations: [
@@ -25,12 +27,15 @@ import {FormsModule} from '@angular/forms';
     HeaderComponent
   ],
   imports: [
+    CommonModule,
     BrowserModule,
     AppRouteModule,
     HttpClientModule,
     BrowserAnimationsModule,
     NgBusyModule,
-    FormsModule
+    FormsModule,
+    BrowserAnimationsModule, // required animations module
+    ToastrModule.forRoot()
   ],
   providers: [],
   bootstrap: [AppComponent]
