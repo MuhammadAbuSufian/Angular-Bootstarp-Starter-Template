@@ -3,6 +3,7 @@ import {NgModule} from '@angular/core';
 import {HomeComponent} from './home/home.component';
 import {UserComponent} from './user/user.component';
 import {AttendanceComponent} from './attendance/attendance.component';
+import {UserRegisterComponent} from './user/register/user-register.component';
 
 export const routes: Routes = [
   {
@@ -30,6 +31,13 @@ export const routes: Routes = [
       title: 'Attendance'
     },
     component: AttendanceComponent,
+  },
+  {
+    path: 'user-registration',
+    data: {
+      title: 'Register New User'
+    },
+    component: UserRegisterComponent,
   },
   {
     path: '**',

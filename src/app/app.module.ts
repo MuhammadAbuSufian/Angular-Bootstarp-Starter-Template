@@ -9,6 +9,10 @@ import {HttpClientModule} from '@angular/common/http';
 import { AttendanceComponent } from './attendance/attendance.component';
 import {NgBusyModule} from 'ng-busy';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
+import {UserRegisterComponent} from './user/register/user-register.component';
+import {FooterComponent} from './widgets/footer/footer.component';
+import {HeaderComponent} from './widgets/header/header.component';
+import {FormsModule} from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -16,7 +20,9 @@ import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
     HomeComponent,
     UserComponent,
     AttendanceComponent,
-
+    UserRegisterComponent,
+    FooterComponent,
+    HeaderComponent
   ],
   imports: [
     BrowserModule,
@@ -24,6 +30,7 @@ import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
     HttpClientModule,
     BrowserAnimationsModule,
     NgBusyModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
