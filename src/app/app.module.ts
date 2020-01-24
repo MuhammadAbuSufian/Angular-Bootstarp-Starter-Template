@@ -15,6 +15,8 @@ import {HeaderComponent} from './widgets/header/header.component';
 import {FormsModule} from '@angular/forms';
 import {ToastrModule} from 'ngx-toastr';
 import {CommonModule} from '@angular/common';
+import {UserListComponent} from './user/user-list/user-list.component';
+import {AddUserComponent} from './user/add-user/add-user.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +26,9 @@ import {CommonModule} from '@angular/common';
     AttendanceComponent,
     UserRegisterComponent,
     FooterComponent,
-    HeaderComponent
+    HeaderComponent,
+    UserListComponent,
+    AddUserComponent
   ],
   imports: [
     CommonModule,
