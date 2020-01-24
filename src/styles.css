@@ -145,3 +145,10 @@
 /*  border-color: red;*/
 /*  background-color: pink;*/
 /*}*/
+
+
+.btn-success {
+  color: #fff;
+  background-color: #009688 !important;
+  border-color: #017267 !important;
+}

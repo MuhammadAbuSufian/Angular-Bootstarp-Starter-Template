@@ -2,7 +2,11 @@
 
 <div class="container">
   <div class="card" style="margin-top: 10px">
-    <div class="card-header" style="height: 35px; margin: 0px; padding: 6px 0px 0px 15px;">{{title}}</div>
+    <div class="card-header">
+      <h5 _ngcontent-c2="" class="card-title" style="font-size: 19px; margin-top: 10px">
+        <span _ngcontent-c2="" class="green-border-bottom">{{title}}</span>
+      </h5>
+    </div>
     <div class="card-body" style="min-height: 450px">
       <div [ngBusy]="{busy: setupService.busy, message: 'Loading...', backdrop: false, delay: 200, minDuration: 600}"></div>
       <router-outlet></router-outlet>
